@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-13T15:57:34.367Z",
+  "source": "/Users/Yoga/Projects/foresight-learning/hw6/carousel/slides.html",
+  "limits": {
+    "titleWords": 6,
+    "slideWords": 25,
+    "contrast": 4.5
+  },
+  "fonts": {
+    "Manrope": true,
+    "Inter": true,
+    "JetBrains Mono": true
+  },
+  "sizes": [
+    "1080x1350",
+    "1080x1350",
+    "1080x1350",
+    "1080x1350",
+    "1080x1350",
+    "1080x1350",
+    "1080x1350",
+    "1080x1350"
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "id": "s1",
+      "w": 1080,
+      "h": 1350,
+      "titleWords": 4,
+      "slideWords": 20,
+      "minContrast": 7.65,
+      "minContrastText": "/ 08",
+      "problems": []
+    },
+    {
+      "slide": 2,
+      "id": "s2",
+      "w": 1080,
+      "h": 1350,
+      "titleWords": 6,
+      "slideWords": 24,
+      "minContrast": 7.65,
+      "minContrastText": "/ 08",
+      "problems": []
+    },
+    {
+      "slide": 3,
+      "id": "s3",
+      "w": 1080,
+      "h": 1350,
+      "titleWords": 5,
+      "slideWords": 22,
+      "minContrast": 7.65,
+      "minContrastText": "/ 08",
+      "problems": []
+    },
+    {
+      "slide": 4,
+      "id": "s4",
+      "w": 1080,
+      "h": 1350,
+      "titleWords": 3,
+      "slideWords": 22,
+      "minContrast": 7.65,
+      "minContrastText": "/ 08",
+      "problems": []
+    },
+    {
+      "slide": 5,
+      "id": "s5",
+      "w": 1080,
+      "h": 1350,
+      "titleWords": 5,
+      "slideWords": 22,
+      "minContrast": 7.65,
+      "minContrastText": "/ 08",
+      "problems": []
+    },
+    {
+      "slide": 6,
+      "id": "s6",
+      "w": 1080,
+      "h": 1350,
+      "titleWords": 4,
+      "slideWords": 22,
+      "minContrast": 7.65,
+      "minContrastText": "/ 08",
+      "problems": [
+        "переполнение по ширине: frame 1223>936",
+        "переполнение по ширине: title w 1223>936",
+        "текст за полями: ««Сделано» — только с доказател» [72,414,1295,512]"
+      ]
+    },
+    {
+      "slide": 7,
+      "id": "s7",
+      "w": 1080,
+      "h": 1350,
+      "titleWords": 6,
+      "slideWords": 23,
+      "minContrast": 7.65,
+      "minContrastText": "/ 08",
+      "problems": []
+    },
+    {
+      "slide": 8,
+      "id": "s8",
+      "w": 1080,
+      "h": 1350,
+      "titleWords": 5,
+      "slideWords": 17,
+      "minContrast": 7.65,
+      "minContrastText": "/ 08",
+      "problems": []
+    }
+  ],
+  "ok": false
+}

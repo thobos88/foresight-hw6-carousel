@@ -1,0 +1,31 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@500;600&family=JetBrains+Mono:wght@500;700&display=block" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1920px;height:1200px;background:#0B0D11;color:#F4F5F7;font-family:Inter,sans-serif;padding:56px;display:flex;flex-direction:column;gap:32px;
+background-image:linear-gradient(to right,rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.028) 1px,transparent 1px);background-size:36px 36px}
+.hd{display:flex;justify-content:space-between;align-items:flex-end}
+.lab{font:700 20px/1.35 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#9AA4AA}
+.lab b{color:#CCFF00}
+h1{font:800 56px/1.05 Manrope,sans-serif;letter-spacing:-.02em;margin-top:10px} h1 span{color:#CCFF00}
+.row{flex:1;display:grid;grid-template-columns:auto 1fr;gap:48px;min-height:0}
+.col{display:flex;flex-direction:column;gap:14px;min-height:0}
+.bb{height:930px;border-radius:18px;border:1px solid rgba(255,255,255,.12)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px} .grid img{width:100%;border-radius:12px;display:block;border:1px solid rgba(255,255,255,.10)}
+.panel{flex:1;background:#13161C;border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:22px 26px;font:500 19px/1.55 'JetBrains Mono',monospace;color:#9AA4AA;white-space:pre}
+.panel b{color:#F4F5F7;font-weight:700} .panel i{font-style:normal;color:#CCFF00}
+</style></head><body>
+<div class="hd"><div><div class="lab">ДЗ · неделя 6 · <b>Harness</b> · урок 7.2</div><h1>Брендбук → скилл <span>/carousel</span> → карусель</h1></div>
+<div class="lab">13.10.2026 · канал «В работу!»</div></div>
+<div class="row">
+ <div class="col"><div class="lab">01 · брендбук в ChatGPT</div><img class="bb" src="../brandbook-preview.png"></div>
+ <div class="col"><div class="lab">03 · результат: «Карта обвязки», 8 слайдов 1080×1350</div><div class="grid"><img src="../carousel/01.png"><img src="../carousel/02.png"><img src="../carousel/03.png"><img src="../carousel/04.png"><img src="../carousel/05.png"><img src="../carousel/06.png"><img src="../carousel/07.png"><img src="../carousel/08.png"></div>
+  <div class="lab" style="margin-top:6px">02 · скилл в Claude Code</div>
+  <div class="panel"><b>hw6/.claude/skills/carousel/</b>  SKILL.md · carousel.css · template.html · render.mjs
+<b>$ node render.mjs carousel/slides.html</b>
+01…08  1080x1350   заголовок ≤ 6 сл.   на слайде ≤ 24 сл.   мин. контраст 7,65:1
+шрифты с кириллицей: Manrope ✓  Inter ✓  JetBrains Mono ✓
+<i>ИТОГ: OK</i>
+<b>$ негативный тест</b> (плохой слайд нарочно)
+контраст 1,83 · 31 слово · заголовок за краем → <i>все три пойманы, exit 1</i></div></div>
+</div></body></html>

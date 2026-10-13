@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Карта обвязки — карусель «В работу!»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@500;600&family=JetBrains+Mono:wght@500;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="../.claude/skills/carousel/carousel.css">
+<!-- Цифры сверены с dk-bb-system 13.10.2026: 38 источников (technical/knowledge/sources.toml),
+     7 скиллов (.agents/skills), 5 ролей (.codex/agents), 199 тестов бота первой линии (unittest: OK),
+     режим бота — CHG-147: ночной автоответ Авито ДК и ББ, дневная страховка Авито ДК (10 мин). -->
+</head>
+<body>
+
+<!-- Иконки: свои, линией 2.6 px, без стоковых и чужих логотипов -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-rules" viewBox="0 0 48 48"><path d="M13 5h15l9 9v29H13z"/><path d="M28 5v9h9"/><path d="M19 23h12M19 29h12M19 35h7"/></symbol>
+  <symbol id="i-map" viewBox="0 0 48 48"><path d="M5 11l12-5 14 5 12-5v31l-12 5-14-5-12 5z"/><path d="M17 6v31M31 11v31"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 48 48"><path d="M18 5v9M30 5v9"/><path d="M12 14h24v7a12 12 0 0 1-24 0z"/><path d="M24 33v10"/></symbol>
+  <symbol id="i-pult" viewBox="0 0 48 48"><path d="M6 9h36v24H23l-9 7v-7H6z"/><path d="M15 19v4M19.5 16v10M24 14v14M28.5 17v8M33 19.5v3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M16 24.5l5.5 5.5L32 19"/></symbol>
+  <symbol id="i-prod" viewBox="0 0 48 48"><path d="M5 8h25v16H15l-6 5v-5H5z"/><path d="M34 16h9v16h-4v5l-6-5H19v-4"/></symbol>
+  <symbol id="i-tick" viewBox="0 0 48 48"><path d="M13 25l7 7 15-15"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 40 24"><path d="M3 12h32M27 4l8 8-8 8"/></symbol>
+</svg>
+
+<!-- 01 · Обложка -->
+<section class="slide" id="s1">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Можно повторить</div><div class="count"><b>01</b> / 08</div></div>
+    <div class="kick w" style="margin-top:64px">Как ИИ работает в <span class="l">моём бизнесе</span></div>
+    <h1 class="hero w" style="margin-top:28px">Не чат,<br>а <span class="l">обвязка</span></h1>
+    <p class="body w" style="margin-top:36px;max-width:820px">6 слоёв вокруг модели превращают её из собеседника в работника.</p>
+    <div style="flex:1;display:grid;place-items:center;min-height:0">
+      <svg viewBox="0 0 936 500" width="936" height="500" class="orbit" aria-label="Схема: модель в центре, вокруг 6 слоёв">
+        <g stroke="rgba(255,255,255,.10)" stroke-width="2">
+          <line x1="468" y1="164" x2="468" y2="108"/><line x1="542.5" y1="207" x2="591" y2="179"/><line x1="542.5" y1="293" x2="591" y2="321"/>
+          <line x1="468" y1="336" x2="468" y2="392"/><line x1="393.5" y1="293" x2="345" y2="321"/><line x1="393.5" y1="207" x2="345" y2="179"/>
+        </g>
+        <circle cx="468" cy="250" r="170" fill="none" stroke="#CCFF00" stroke-width="2"/>
+        <circle cx="468" cy="250" r="86" fill="#13161C" stroke="rgba(255,255,255,.14)" stroke-width="2"/>
+        <text x="468" y="266" text-anchor="middle" style="font:800 60px Manrope;fill:#F4F5F7;letter-spacing:-.02em">ИИ</text>
+        <text x="468" y="302" text-anchor="middle" style="font:700 16px 'JetBrains Mono';fill:#9AA4AA;letter-spacing:.14em">МОДЕЛЬ</text>
+        <g fill="#0B0D11" stroke="#CCFF00" stroke-width="2">
+          <circle cx="468" cy="80" r="28"/><circle cx="615.2" cy="165" r="28"/><circle cx="615.2" cy="335" r="28"/>
+          <circle cx="468" cy="420" r="28"/><circle cx="320.8" cy="335" r="28"/><circle cx="320.8" cy="165" r="28"/>
+        </g>
+        <g style="font:700 20px 'JetBrains Mono';fill:#CCFF00" text-anchor="middle">
+          <text x="468" y="87">1</text><text x="615.2" y="172">2</text><text x="615.2" y="342">3</text>
+          <text x="468" y="427">4</text><text x="320.8" y="342">5</text><text x="320.8" y="172">6</text>
+        </g>
+        <g style="font:700 22px 'JetBrains Mono';fill:#F4F5F7;letter-spacing:.08em">
+          <text x="468" y="36" text-anchor="middle">ПРАВИЛА</text>
+          <text x="659" y="173">ЗНАНИЯ</text>
+          <text x="659" y="343">НАВЫКИ</text>
+          <text x="468" y="482" text-anchor="middle">ПУЛЬТ</text>
+          <text x="277" y="343" text-anchor="end">ПРОВЕРКИ</text>
+          <text x="277" y="173" text-anchor="end">ПРОДАКШН</text>
+        </g>
+      </svg>
+    </div>
+    <div class="swipe">Листай <svg class="i" viewBox="0 0 40 24"><use href="#i-arrow"/></svg></div>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- 02 · Правила -->
+<section class="slide" id="s2">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Карта обвязки</div><div class="count"><b>02</b> / 08</div></div>
+    <div class="head"><div class="ico"><svg class="i"><use href="#i-rules"/></svg></div><div class="kick">Слой 1 · <span class="l">Правила</span></div></div>
+    <h2 class="title w">Один файл правил для всех агентов</h2>
+    <p class="body w">Что можно, что нельзя и когда остановиться.</p>
+    <div class="bottom rows">
+      <div class="row"><div class="k w">«Посмотри»</div><div class="v w">Только читаю и предлагаю</div></div>
+      <div class="row"><div class="k w">«Сделай»</div><div class="v w">Меняю — со снимком и откатом</div></div>
+    </div>
+    <nav class="map" data-cur="0"></nav>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- 03 · Знания -->
+<section class="slide" id="s3">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Карта обвязки</div><div class="count"><b>03</b> / 08</div></div>
+    <div class="head"><div class="ico"><svg class="i"><use href="#i-map"/></svg></div><div class="kick">Слой 2 · <span class="l">Знания</span></div></div>
+    <h2 class="title w">Карта знаний, а&nbsp;не&nbsp;копия</h2>
+    <p class="body w">Для каждого записано: где оригинал, кто отвечает, когда проверяли. Копии устаревают <span class="mu">— их не делаю.</span></p>
+    <div class="bottom fact"><div class="num w">38</div><div class="cap"><span class="w">источников<br>в реестре</span><div class="cap m">на 13.10.2026</div></div></div>
+    <nav class="map" data-cur="1"></nav>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- 04 · Навыки и подключения -->
+<section class="slide" id="s4">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Карта обвязки</div><div class="count"><b>04</b> / 08</div></div>
+    <div class="head"><div class="ico"><svg class="i"><use href="#i-plug"/></svg></div><div class="kick">Слой 3 · <span class="l">Навыки</span></div></div>
+    <h2 class="title w">Навыки и подключения</h2>
+    <p class="body w">Скилл — инструкция на частую задачу. Подключения: свой MCP к учёту <span class="mu">(только чтение)</span>, Google, документация.</p>
+    <div class="bottom stats" style="grid-template-columns:repeat(2,1fr)">
+      <div><div class="n w">7</div><div class="cap m w">скиллов</div></div>
+      <div><div class="n w">5</div><div class="cap m w">ролей агентов</div></div>
+    </div>
+    <nav class="map" data-cur="2"></nav>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- 05 · Пульт -->
+<section class="slide" id="s5">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Карта обвязки</div><div class="count"><b>05</b> / 08</div></div>
+    <div class="head"><div class="ico"><svg class="i"><use href="#i-pult"/></svg></div><div class="kick">Слой 4 · <span class="l">Пульт</span></div></div>
+    <h2 class="title w">Всё управление — в&nbsp;одном&nbsp;окне</h2>
+    <p class="body w">Агенты присылают вопросы в один Telegram-бот. Отвечаю текстом или голосом, на ходу.</p>
+    <div class="bottom chat">
+      <div class="b in col"><i style="width:78%"></i><i style="width:52%"></i></div>
+      <div class="b out"><svg viewBox="0 0 174 40" width="174" height="40"><g fill="#0B0D11">
+        <rect x="0" y="16" width="6" height="8" rx="3"/><rect x="14" y="10" width="6" height="20" rx="3"/><rect x="28" y="4" width="6" height="32" rx="3"/><rect x="42" y="12" width="6" height="16" rx="3"/><rect x="56" y="6" width="6" height="28" rx="3"/><rect x="70" y="14" width="6" height="12" rx="3"/><rect x="84" y="8" width="6" height="24" rx="3"/><rect x="98" y="2" width="6" height="36" rx="3"/><rect x="112" y="12" width="6" height="16" rx="3"/><rect x="126" y="16" width="6" height="8" rx="3"/><rect x="140" y="10" width="6" height="20" rx="3"/><rect x="154" y="14" width="6" height="12" rx="3"/><rect x="168" y="17" width="6" height="6" rx="3"/></g></svg></div>
+    </div>
+    <div class="cap w" style="margin-top:28px">Утром — сводка: <span class="l">что ждёт решения</span></div>
+    <nav class="map" data-cur="3"></nav>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- 06 · Проверки -->
+<section class="slide" id="s6">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Карта обвязки</div><div class="count"><b>06</b> / 08</div></div>
+    <div class="head"><div class="ico"><svg class="i"><use href="#i-check"/></svg></div><div class="kick">Слой 5 · <span class="l">Проверки</span></div></div>
+    <h2 class="title w" style="font-size:88px">«Сделано» — только с&nbsp;доказательством</h2>
+    <p class="body w">Нет доказательства — пишем <span class="l">«не&nbsp;сделано»</span>.</p>
+    <ul class="bottom checks">
+      <li><div class="ico s"><svg class="i"><use href="#i-tick"/></svg></div><span class="w">Тесты после каждой правки</span></li>
+      <li><div class="ico s"><svg class="i"><use href="#i-tick"/></svg></div><span class="w">Чтение из системы после записи</span></li>
+      <li><div class="ico s"><svg class="i"><use href="#i-tick"/></svg></div><span class="w">Второе мнение другой модели</span></li>
+    </ul>
+    <nav class="map" data-cur="4"></nav>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- 07 · Продакшн -->
+<section class="slide" id="s7">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Карта обвязки</div><div class="count"><b>07</b> / 08</div></div>
+    <div class="head"><div class="ico"><svg class="i"><use href="#i-prod"/></svg></div><div class="kick">Слой 6 · <span class="l">Продакшн</span></div></div>
+    <h2 class="title w">Бот первой линии уже&nbsp;в&nbsp;работе</h2>
+    <p class="body w">Ночью отвечает клиентам на Авито, днём страхует менеджера. <span class="mu">Телефоны и имена до модели не доходят.</span></p>
+    <div class="bottom fact"><div class="num w">199</div><div class="cap"><span class="w">тестов<br>проходят</span><div class="cap m">прогон 13.10.2026</div></div></div>
+    <nav class="map" data-cur="5"></nav>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- 08 · Итог -->
+<section class="slide" id="s8">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Итог</div><div class="count"><b>08</b> / 08</div></div>
+    <h2 class="title w" style="margin-top:72px">Сначала <span class="l">убрать лишнее</span>, потом автоматизировать</h2>
+    <ol class="vmap">
+      <li><div class="ico s"><svg class="i"><use href="#i-rules"/></svg></div><span class="no">01</span><span class="nm w">Правила</span></li>
+      <li><div class="ico s"><svg class="i"><use href="#i-map"/></svg></div><span class="no">02</span><span class="nm w">Знания</span></li>
+      <li><div class="ico s"><svg class="i"><use href="#i-plug"/></svg></div><span class="no">03</span><span class="nm w">Навыки и подключения</span></li>
+      <li><div class="ico s"><svg class="i"><use href="#i-pult"/></svg></div><span class="no">04</span><span class="nm w">Пульт</span></li>
+      <li><div class="ico s"><svg class="i"><use href="#i-check"/></svg></div><span class="no">05</span><span class="nm w">Проверки</span></li>
+      <li><div class="ico s"><svg class="i"><use href="#i-prod"/></svg></div><span class="no">06</span><span class="nm w">Продакшн</span></li>
+    </ol>
+    <div class="cta w">Что заберёшь в работу? <svg class="i" viewBox="0 0 40 24"><use href="#i-arrow"/></svg></div>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<script>
+  // Повторяющиеся части: карта-полоса слоёв и подвал
+  const LAYERS = ['Правила', 'Знания', 'Навыки', 'Пульт', 'Проверки', 'Продакшн'];
+  for (const nav of document.querySelectorAll('nav.map')) {
+    const cur = Number(nav.dataset.cur);
+    nav.innerHTML = '<ol style="--p:' + cur / 5 + '">' + LAYERS.map((name, i) =>
+      '<li class="' + (i < cur ? 'done' : i === cur ? 'cur' : 'next') + '"><span class="dot">' + (i + 1) +
+      '</span><span class="lbl">' + name + '</span></li>').join('') + '</ol>';
+  }
+  for (const f of document.querySelectorAll('.foot'))
+    f.innerHTML = '<span><b>В работу!</b> · Вячеслав Хазаржиян</span><span class="u">t.me/khazarzhiyan</span>';
+</script>
+</body>
+</html>

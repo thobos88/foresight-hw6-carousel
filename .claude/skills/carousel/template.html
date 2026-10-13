@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>НАЗВАНИЕ — карусель «В работу!»</title>
+<!-- Шрифты брендбука: Manrope (заголовки, цифры), Inter (текст), JetBrains Mono (метки). Все — с кириллицей. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@500;600&family=JetBrains+Mono:wght@500;700&display=block" rel="stylesheet">
+<!-- Путь к стилю — от папки карусели: carousel/<тема>/slides.html → ../../.claude/skills/carousel/carousel.css -->
+<link rel="stylesheet" href="../../.claude/skills/carousel/carousel.css">
+<!-- Источники цифр (обязательно): что, откуда, на какую дату. -->
+</head>
+<body>
+
+<!-- Иконки: свои, линией. Новую иконку рисуем сами в viewBox 0 0 48 48. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-rules" viewBox="0 0 48 48"><path d="M13 5h15l9 9v29H13z"/><path d="M28 5v9h9"/><path d="M19 23h12M19 29h12M19 35h7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M16 24.5l5.5 5.5L32 19"/></symbol>
+  <symbol id="i-tick" viewBox="0 0 48 48"><path d="M13 25l7 7 15-15"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 40 24"><path d="M3 12h32M27 4l8 8-8 8"/></symbol>
+</svg>
+
+<!-- ОБЛОЖКА: рубрика, метка-тема, крупный заголовок (≤ 6 слов, лаймом — одно слово), одна строка пояснения -->
+<section class="slide">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>РУБРИКА</div><div class="count"><b>01</b> / 03</div></div>
+    <div class="kick w" style="margin-top:64px">О ЧЁМ <span class="l">КАРУСЕЛЬ</span></div>
+    <h1 class="hero w" style="margin-top:28px">Крупная<br><span class="l">мысль</span></h1>
+    <p class="body w" style="margin-top:36px;max-width:820px">Одна строка: что человек получит, если долистает.</p>
+    <div class="swipe">Листай <svg class="i" viewBox="0 0 40 24"><use href="#i-arrow"/></svg></div>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- СОДЕРЖАТЕЛЬНЫЙ: иконка + метка, заголовок, текст сверху; доказательство (цифра с подписью и датой) — внизу -->
+<section class="slide">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>ТЕМА</div><div class="count"><b>02</b> / 03</div></div>
+    <div class="head"><div class="ico"><svg class="i"><use href="#i-rules"/></svg></div><div class="kick">Шаг 1 · <span class="l">Название</span></div></div>
+    <h2 class="title w">Заголовок до шести слов</h2>
+    <p class="body w">Одна мысль простыми словами. Не больше двух-трёх строк.</p>
+    <div class="bottom fact"><div class="num w">00</div><div class="cap"><span class="w">что<br>измерили</span><div class="cap m">на ДД.ММ.ГГГГ</div></div></div>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<!-- ФИНАЛ: практический вывод и ОДИН следующий шаг -->
+<section class="slide">
+  <div class="frame">
+    <div class="top"><div class="rub"><i></i>Итог</div><div class="count"><b>03</b> / 03</div></div>
+    <h2 class="title w" style="margin-top:72px">Вывод, который <span class="l">можно применить</span></h2>
+    <ul class="checks" style="margin-top:56px">
+      <li><div class="ico s"><svg class="i"><use href="#i-tick"/></svg></div><span class="w">Первый шаг</span></li>
+      <li><div class="ico s"><svg class="i"><use href="#i-tick"/></svg></div><span class="w">Второй шаг</span></li>
+    </ul>
+    <div class="cta w">Что заберёшь в работу? <svg class="i" viewBox="0 0 40 24"><use href="#i-arrow"/></svg></div>
+    <div class="foot"></div>
+  </div>
+</section>
+
+<script>
+  // Подвал на всех слайдах. Карта-полоса (nav.map data-cur="N") — см. carousel/slides.html «Карта обвязки».
+  for (const f of document.querySelectorAll('.foot'))
+    f.innerHTML = '<span><b>В работу!</b> · Вячеслав Хазаржиян</span><span class="u">t.me/khazarzhiyan</span>';
+</script>
+</body>
+</html>
